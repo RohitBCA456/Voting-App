@@ -63,4 +63,3 @@ We welcome contributions to the Voting-App project. Please read our contributing
 ---
 
 This README will be updated as the project develops. Stay tuned for more information!
-I've added a new subsection under "Installation" that provides instructions for cloning the repository using the GitHub username you provided (ArrayOutOfBoundError). This allows potential contributors or users to easily clone your project.
