@@ -1,0 +1,295 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.Container {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+/* Navbar Styling */
+.Navbar {
+  width: 100%;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Components {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* Logo Styling */
+.Logo img {
+  height: 50px;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+/* Navigation Styling */
+.Nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.Nav ul li {
+  display: inline-block;
+}
+
+.Nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.Nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Dropdown */
+.profile {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Profile Picture (Circular) */
+.profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect on Profile */
+.profile img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background: white;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  padding: 15px;
+  z-index: 100;
+}
+
+/* Show Dropdown on Hover */
+.profile:hover .dropdown {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Profile Image in Dropdown */
+.dropdown .profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #6e8efb;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Dropdown Links */
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.dropdown a:hover {
+  background: #6e8efb;
+  color: white;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.voting-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.voting-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Candidate Cards */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Candidate Images */
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #6e8efb;
+}
+
+/* Candidate Name */
+.card h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Candidate Description */
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Vote Button */
+.vote-btn {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.vote-btn:hover {
+  background: linear-gradient(135deg, #4b7bec, #8860d0);
+  transform: scale(1.05);
+}
+/* Footer Styling */
+.footer {
+          background: linear-gradient(135deg, #6e8efb, #a777e3);
+          color: white;
+          padding: 40px 20px;
+          text-align: center;
+      }
+      
+      .footer-container {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          max-width: 1100px;
+          margin: 0 auto;
+      }
+      
+      /* Footer Sections */
+      .footer-section {
+          flex: 1;
+          min-width: 250px;
+          margin: 10px;
+      }
+      
+      .footer-section h3 {
+          font-size: 20px;
+          margin-bottom: 15px;
+      }
+      
+      .footer-section p {
+          font-size: 14px;
+          line-height: 1.6;
+          opacity: 0.9;
+      }
+      
+      /* Quick Links */
+      .footer-section ul {
+          list-style: none;
+          padding: 0;
+      }
+      
+      .footer-section ul li {
+          margin: 8px 0;
+      }
+      
+      .footer-section ul li a {
+          color: white;
+          text-decoration: none;
+          transition: 0.3s;
+      }
+      
+      .footer-section ul li a:hover {
+          text-decoration: underline;
+      }
+      
+      /* Social Media Icons */
+      .social-icons {
+          margin-top: 10px;
+      }
+      
+      .social-icons a {
+          color: white;
+          font-size: 22px;
+          margin: 0 8px;
+          transition: transform 0.3s;
+      }
+      
+      .social-icons a:hover {
+          transform: scale(1.2);
+      }
+      
+      /* Footer Bottom */
+      .footer-bottom {
+          background: rgba(255, 255, 255, 0.1);
+          padding: 10px;
+          margin-top: 20px;
+          font-size: 14px;
+      }
+      

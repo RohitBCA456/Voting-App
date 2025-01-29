@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://www.surveylegend.com/wordpress/wp-content/uploads/2020/04/online-voting.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+form {
+  width: 50vw;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-control {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.btn {
+  border-radius: 1rem;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border: none;
+}
+.btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  transition: 0.3s;
+  delay: 0.3s;
+}
