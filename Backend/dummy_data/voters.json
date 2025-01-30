@@ -1,103 +1,122 @@
 [
-          {
-            "name": "Amit Sharma",
-            "AdhaarNumber": "123456789012",
-            "phoneNumber": "9876543210"
-          },
-          {
-            "name": "Priya Verma",
-            "AdhaarNumber": "234567890123",
-            "phoneNumber": "8765432109"
-          },
-          {
-            "name": "Rahul Gupta",
-            "AdhaarNumber": "345678901234",
-            "phoneNumber": "7654321098"
-          },
-          {
-            "name": "Sneha Iyer",
-            "AdhaarNumber": "456789012345",
-            "phoneNumber": "6543210987"
-          },
-          {
-            "name": "Vikram Singh",
-            "AdhaarNumber": "567890123456",
-            "phoneNumber": "5432109876"
-          },
-          {
-            "name": "Pooja Reddy",
-            "AdhaarNumber": "678901234567",
-            "phoneNumber": "4321098765"
-          },
-          {
-            "name": "Anil Kumar",
-            "AdhaarNumber": "789012345678",
-            "phoneNumber": "3210987654"
-          },
-          {
-            "name": "Divya Nair",
-            "AdhaarNumber": "890123456789",
-            "phoneNumber": "2109876543"
-          },
-          {
-            "name": "Suresh Menon",
-            "AdhaarNumber": "901234567890",
-            "phoneNumber": "1098765432"
-          },
-          {
-            "name": "Kavita Choudhary",
-            "AdhaarNumber": "112233445566",
-            "phoneNumber": "9988776655"
-          },
-          {
-            "name": "Rohan Das",
-            "AdhaarNumber": "223344556677",
-            "phoneNumber": "8877665544"
-          },
-          {
-            "name": "Meena Agarwal",
-            "AdhaarNumber": "334455667788",
-            "phoneNumber": "7766554433"
-          },
-          {
-            "name": "Arjun Yadav",
-            "AdhaarNumber": "445566778899",
-            "phoneNumber": "6655443322"
-          },
-          {
-            "name": "Swati Joshi",
-            "AdhaarNumber": "556677889900",
-            "phoneNumber": "5544332211"
-          },
-          {
-            "name": "Manish Tripathi",
-            "AdhaarNumber": "667788990011",
-            "phoneNumber": "4433221100"
-          },
-          {
-            "name": "Neha Patil",
-            "AdhaarNumber": "778899001122",
-            "phoneNumber": "3322110099"
-          },
-          {
-            "name": "Rajesh Pandey",
-            "AdhaarNumber": "889900112233",
-            "phoneNumber": "2211009988"
-          },
-          {
-            "name": "Sonia Dutta",
-            "AdhaarNumber": "990011223344",
-            "phoneNumber": "1100998877"
-          },
-          {
-            "name": "Harish Mehta",
-            "AdhaarNumber": "101112131415",
-            "phoneNumber": "9998887776"
-          },
-          {
-            "name": "Ananya Sen",
-            "AdhaarNumber": "121314151617",
-            "phoneNumber": "8887776665"
-          }
-        ]
-        
+  {
+    "name": "Amit Kumar",
+    "AdhaarNumber": "123456789012",
+    "phoneNumber": "9876543210",
+    "isVoted": false
+  },
+  {
+    "name": "Priya Sharma",
+    "AdhaarNumber": "234567890123",
+    "phoneNumber": "8765432109",
+    "isVoted": false
+  },
+  {
+    "name": "Rahul Verma",
+    "AdhaarNumber": "345678901234",
+    "phoneNumber": "7654321098",
+    "isVoted": false
+  },
+  {
+    "name": "Neha Gupta",
+    "AdhaarNumber": "456789012345",
+    "phoneNumber": "6543210987",
+    "isVoted": false
+  },
+  {
+    "name": "Suresh Yadav",
+    "AdhaarNumber": "567890123456",
+    "phoneNumber": "5432109876",
+    "isVoted": false
+  },
+  {
+    "name": "Anjali Singh",
+    "AdhaarNumber": "678901234567",
+    "phoneNumber": "4321098765",
+    "isVoted": false
+  },
+  {
+    "name": "Vikram Chauhan",
+    "AdhaarNumber": "789012345678",
+    "phoneNumber": "3210987654",
+    "isVoted": false
+  },
+  {
+    "name": "Pooja Reddy",
+    "AdhaarNumber": "890123456789",
+    "phoneNumber": "2109876543",
+    "isVoted": false
+  },
+  {
+    "name": "Ravi Patil",
+    "AdhaarNumber": "901234567890",
+    "phoneNumber": "1098765432",
+    "isVoted": false
+  },
+  {
+    "name": "Manisha Iyer",
+    "AdhaarNumber": "012345678901",
+    "phoneNumber": "1987654321",
+    "isVoted": false
+  },
+  {
+    "name": "Arjun Nair",
+    "AdhaarNumber": "112233445566",
+    "phoneNumber": "9876123456",
+    "isVoted": false
+  },
+  {
+    "name": "Deepak Mehta",
+    "AdhaarNumber": "223344556677",
+    "phoneNumber": "8765123456",
+    "isVoted": false
+  },
+  {
+    "name": "Kavita Desai",
+    "AdhaarNumber": "334455667788",
+    "phoneNumber": "7654123456",
+    "isVoted": false
+  },
+  {
+    "name": "Harish Malhotra",
+    "AdhaarNumber": "445566778899",
+    "phoneNumber": "7654123256",
+    "isVoted": false
+  },
+  {
+    "name": "Sunita Bansal",
+    "AdhaarNumber": "556677889900",
+    "phoneNumber": "5432123456",
+    "isVoted": false
+  },
+  {
+    "name": "Rajeev Choudhary",
+    "AdhaarNumber": "667788990011",
+    "phoneNumber": "4321123456",
+    "isVoted": false
+  },
+  {
+    "name": "Meena Pillai",
+    "AdhaarNumber": "778899001122",
+    "phoneNumber": "3211123456",
+    "isVoted": false
+  },
+  {
+    "name": "Sanjay Bhattacharya",
+    "AdhaarNumber": "889900112233",
+    "phoneNumber": "2101123456",
+    "isVoted": false
+  },
+  {
+    "name": "Lakshmi Subramanian",
+    "AdhaarNumber": "990011223344",
+    "phoneNumber": "1091123456",
+    "isVoted": false
+  },
+  {
+    "name": "Ajay Thakur",
+    "AdhaarNumber": "101122334455",
+    "phoneNumber": "1981123456",
+    "isVoted": false
+  }
+]

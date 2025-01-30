@@ -18,6 +18,7 @@ const voterSchema = new Schema(
     },
     token: {
       type: String,
+      unique: true,
     },
     isVoted: {
           type: Boolean,
@@ -32,7 +33,7 @@ voterSchema.methods.generateToken = function () {
     {
       id: this._id,
     },
-    process.env.JWTSECRET,
+    process.env.JWT_SECRET,
     {
       expiresIn: "1d",
     }

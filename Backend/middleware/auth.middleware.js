@@ -2,23 +2,30 @@ import JWT from "jsonwebtoken";
 import { Voter } from "../model/voters.model.js";
 const auth = async (req, res, next) => {
   try {
+    // Try fetching token from cookies or Authorization header
     const token =
-      req.cookies?.token || req.header("Authorization")?.replace("Bearer", "");
+      req.cookies?.token || req.header("Authorization")?.replace("Bearer ", "");
+
+    console.log("Token received: ", token); // Log for debugging
+
     if (!token) {
-      res.status(404).json({ message: "Invalid Token." });
+      return res.status(404).json({ message: "Invalid Token." });
     }
+
+    // Verify token
     const decodedToken = JWT.verify(token, process.env.JWT_SECRET);
-    const user = Voter.findById(decodedToken?.id).select(
+    const user = await Voter.findById(decodedToken?.id).select(
       "-AdhaarNumber -phoneNumber"
     );
+
     if (!user) {
-      res.status(404).json({ message: "User not found." });
+      return res.status(404).json({ message: "User not found." });
     }
+
     req.user = user;
     next();
   } catch (error) {
-    res.status(500).json({ message: "Error: " + error.message });
+    return res.status(500).json({ message: "Error: " + error.message });
   }
 };
-
 export { auth };

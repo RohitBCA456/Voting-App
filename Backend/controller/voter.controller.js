@@ -3,45 +3,52 @@ import { Voter } from "../model/voters.model.js";
 const login = async (req, res) => {
   try {
     const { adhaarCard, phNumber } = req.body;
-    const voter = await Voter.findOne({ AdhaarNumber: adhaarCard });
+    const voter = await Voter.findOne({ AdhaarNumber: adhaarCard , phoneNumber: phNumber });
     if (!voter) {
       return res.status(404).json({ message: "Voter not found." });
     }
     const token = await voter.generateToken();
+    voter.save({validateBeforeSave: false});
     voter.token = token;
     const options = {
       httpOnly: true,
-      secure: true,
+      secure: false,
+      sameSite: "None",
     };
     return res
       .status(200)
-      .cookie(token, options)
-      .json({ message: "Login successful." });
+      .cookie("token",token, options)
+      .json({ message: "Login successful."});
   } catch (error) {
-    console.log(error.message);
+    console.log(error);
     return res.status(400).json({ message: "Error while logging in." });
   }
 };
 
 const vote = async (req, res) => {
   try {
-    const { candidateId } = req.params;
+    const { candidateId } = req.body;
     const candidate = await Candidate.findById(candidateId);
     const voter = await Voter.findById(req.user?._id);
+
     if (voter.isVoted === true) {
-      return res.status(300).json({ message: "You already gave a vote." });
+      return res.status(400).json({ message: "You already gave a vote." });
     }
-    candidate.votes = voter._id;
+
+    candidate.votes.push(voter._id);
     candidate.voteCount++;
     voter.isVoted = true;
-    voter.save({ validateBeforeSave: false });
-    candidate.save({ validateBeforeSave: false });
+
+    await voter.save({ validateBeforeSave: false });
+    await candidate.save({ validateBeforeSave: false });
+
     return res.status(200).json({ message: "Vote successfully registered." });
   } catch (error) {
     console.log(error.message);
-    return res.status(404).json({ message: "Error while voting." });
+    return res.status(500).json({ message: "Error while voting." });
   }
 };
+
 
 const logout = async (req, res) => {
   try {

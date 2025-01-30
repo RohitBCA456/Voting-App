@@ -7,9 +7,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: "http://127.0.0.1:5500",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"]
   })
 );
 import voterRouter from "./router/voter.route.js";
