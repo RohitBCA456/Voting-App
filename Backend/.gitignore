@@ -1,2 +1,13 @@
+# Ignore everything
+*
+
+# But not these files
+!.gitignore
+!.env
+!package.json
+!package-lock.json
+!pnpm-lock.yaml
+!yarn.lock
+
+# Ignore node_modules but keep package.json intact
 node_modules/
-.env
