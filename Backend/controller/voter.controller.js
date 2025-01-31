@@ -8,17 +8,19 @@ const login = async (req, res) => {
       return res.status(404).json({ message: "Voter not found." });
     }
     const token = await voter.generateToken();
-    voter.save({validateBeforeSave: false});
     voter.token = token;
+    voter.save({validateBeforeSave: false});
     const options = {
       httpOnly: true,
-      secure: false,
+      secure: true,
       sameSite: "None",
+      maxAge: 24 * 60 * 60 * 1000, // 1 day
+      path: "/",
     };
     return res
       .status(200)
       .cookie("token",token, options)
-      .json({ message: "Login successful."});
+      .json({ message: "Login successful."})
   } catch (error) {
     console.log(error);
     return res.status(400).json({ message: "Error while logging in." });
@@ -55,7 +57,7 @@ const logout = async (req, res) => {
     const user = await Voter.findOneAndUpdate(req.user?._id, {
       $set: { token: undefined },
     });
-    return res.status(200), json({ message: "Loggout successfully." });
+    return res.status(200).json({ message: "Loggout successfully." });
   } catch (error) {
     return res.status(400).json({ message: "Error: " + error.message });
   }

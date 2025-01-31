@@ -6,8 +6,6 @@ const auth = async (req, res, next) => {
     const token =
       req.cookies?.token || req.header("Authorization")?.replace("Bearer ", "");
 
-    console.log("Token received: ", token); // Log for debugging
-
     if (!token) {
       return res.status(404).json({ message: "Invalid Token." });
     }

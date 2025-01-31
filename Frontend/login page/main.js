@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 form.addEventListener("submit", async (event, req, res) => {
   event.preventDefault();
   try {
-    const response = await fetch("http://localhost:3000/api/v3/voting/login", {
+    const response = await fetch(`http://localhost:3000/api/v3/voting/login`, {
       method: "POST",
       headers: {
           "Content-Type": "application/json",
@@ -11,13 +11,14 @@ form.addEventListener("submit", async (event, req, res) => {
         adhaarCard: document.getElementById("adhaarCard").value,
         phNumber: document.getElementById("phNumber").value,
       }),
+      credentials: "include",
     });
     console.log(response);
     if (response.ok) {
       alert("click here to proceed.");
       console.log("User exists in the database.");
       window.location.href =
-        "http://127.0.0.1:5500/Frontend/main%20page/mainPage.html";
+        "http://127.0.0.1:5500/Frontend/login%20page/mainPage.html";
     } else {
       alert("You're not registered by the Government of India.");
     }

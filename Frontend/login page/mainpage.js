@@ -14,15 +14,18 @@ async function onVoteModi() {
       }),
       credentials: "include",
     });
-    const data = await response.json();
-    console.log(data);
 
-    if (response.ok) {
-      vote_rahul.disabled = true;
-      vote_mamta.disabled = true;
-      vote_rahul.style.display = "none";
-      vote_mamta.style.display = "none";
+    if (response.status === 400) {
+      const errorData = await response.json(); // Extract error message
+      alert(errorData.message || "Already voted.");
     }
+
+    vote_rahul.disabled = true;
+    vote_mamta.disabled = true;
+    vote_modi.disabled = true;
+    vote_rahul.style.display = "none";
+    vote_mamta.style.display = "none";
+    vote_modi.style.display = "none";
   } catch (error) {
     console.log(`error while voting Modi ${error}`);
   }
@@ -38,14 +41,20 @@ async function onVoteRahul() {
       body: JSON.stringify({
         candidateId: "679b0a2471ae7b0dce13b664",
       }),
-      credentials: "include", // ✅ Include credentials for cookies
+      credentials: "include",
     });
 
-    console.log(response);
+    if (response.status === 400) {
+      const errorData = await response.json(); // Extract error message
+      alert(errorData.message || "Already voted.");
+    }
+
     vote_modi.disabled = true;
     vote_mamta.disabled = true;
+    vote_rahul.disabled = true;
     vote_modi.style.display = "none";
     vote_mamta.style.display = "none";
+    vote_rahul.style.display = "none";
   } catch (error) {
     console.log(`error while voting Rahul ${error}`);
   }
@@ -61,14 +70,20 @@ async function onVoteMamta() {
       body: JSON.stringify({
         candidateId: "679b0a2471ae7b0dce13b663",
       }),
-      credentials: "include", // ✅ Include credentials for cookies
+      credentials: "include",
     });
 
-    console.log(response);
+    if (response.status === 400) {
+      const errorData = await response.json();
+      alert(errorData.message || "Already voted.");
+    }
+
     vote_modi.disabled = true;
     vote_rahul.disabled = true;
+    vote_mamta.disabled = true;
     vote_rahul.style.display = "none";
     vote_modi.style.display = "none";
+    vote_mamta.style.display = "none";
   } catch (error) {
     console.log(`error while voting Mamta ${error}`);
   }
