@@ -13,6 +13,8 @@ form.addEventListener("submit", async (event, req, res) => {
       }),
       credentials: "include",
     });
+    localStorage.setItem("adhaarCard",document.getElementById("adhaarCard").value)
+    localStorage.setItem("phNumber",document.getElementById("phNumber").value)
     console.log(response);
     if (response.ok) {
       alert("click here to proceed.");

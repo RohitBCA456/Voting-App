@@ -1,7 +1,10 @@
 const vote_modi = document.getElementById("Narendra-modi");
 const vote_rahul = document.getElementById("Rahul-gandhi");
 const vote_mamta = document.getElementById("Mamta-banerjee");
+const log_out = document.getElementById("log-out");
 
+document.getElementById("Aadhaar").innerText = localStorage.getItem("adhaarCard");
+document.getElementById("Phone").innerText = localStorage.getItem("phNumber");
 async function onVoteModi() {
   try {
     const response = await fetch("http://localhost:3000/api/v3/voting/vote", {
@@ -87,4 +90,22 @@ async function onVoteMamta() {
   } catch (error) {
     console.log(`error while voting Mamta ${error}`);
   }
+}
+
+async function logout(){
+  log_out.addEventListener("click",async() => {
+    const response = await fetch("http://localhost:3000/api/v3/voting/logout",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      },
+    )
+    if(response.ok){
+      alert('You have been logged out successfully.');
+      window.location.href = "http://127.0.0.1:5500/Frontend/login%20page/loginPage.html";
+    }
+  })
 }

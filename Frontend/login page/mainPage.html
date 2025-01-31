@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vote For Change</title>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="mainPage.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -41,9 +41,15 @@
                 alt="User"
                 class="profile-pic"
               />
-              <a href="#">Profile</a>
+              <div class="profile-2">
+                <a href="#" id="user-profile">Profile</a>
+                <div class="dropdown-2">
+                  Aadhar No. : <p id="Aadhaar">Your Aadhar Number</p>
+                  PhoneNo. :<p id="Phone">Your Phone Number</p>
+                </div>
+              </div>
               <a href="#">Settings</a>
-              <a href="#">Logout</a>
+              <a id="log-out" onclick="logout()" href="#">Logout</a>
             </div>
           </div>
         </div>
@@ -61,7 +67,14 @@
               Prime Minister of India, leader of the Bharatiya Janata Party
               (BJP).
             </p>
-            <button id = "Narendra-modi" onclick="onVoteModi()" type ="button" class="vote-btn">Vote</button>
+            <button
+              id="Narendra-modi"
+              onclick="onVoteModi()"
+              type="button"
+              class="vote-btn"
+            >
+              Vote
+            </button>
           </div>
 
           <div class="card">
@@ -74,7 +87,14 @@
               Leader of the Indian National Congress, advocating for democratic
               values.
             </p>
-            <button id = "Rahul-gandhi" onclick="onVoteRahul()" type ="button" class="vote-btn">Vote</button>
+            <button
+              id="Rahul-gandhi"
+              onclick="onVoteRahul()"
+              type="button"
+              class="vote-btn"
+            >
+              Vote
+            </button>
           </div>
 
           <div class="card">
@@ -87,7 +107,14 @@
               Chief Minister of West Bengal, leading the All India Trinamool
               Congress (AITC).
             </p>
-            <button id = "Mamta-banerjee" onclick="onVoteMamta()" type ="button" class="vote-btn">Vote</button>
+            <button
+              id="Mamta-banerjee"
+              onclick="onVoteMamta()"
+              type="button"
+              class="vote-btn"
+            >
+              Vote
+            </button>
           </div>
         </div>
       </div>

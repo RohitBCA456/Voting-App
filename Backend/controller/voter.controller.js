@@ -3,24 +3,26 @@ import { Voter } from "../model/voters.model.js";
 const login = async (req, res) => {
   try {
     const { adhaarCard, phNumber } = req.body;
-    const voter = await Voter.findOne({ AdhaarNumber: adhaarCard , phoneNumber: phNumber });
+    const voter = await Voter.findOne({
+      AdhaarNumber: adhaarCard,
+      phoneNumber: phNumber,
+    });
     if (!voter) {
       return res.status(404).json({ message: "Voter not found." });
     }
     const token = await voter.generateToken();
     voter.token = token;
-    voter.save({validateBeforeSave: false});
+    voter.save({ validateBeforeSave: false });
     const options = {
       httpOnly: true,
       secure: true,
       sameSite: "None",
-      maxAge: 24 * 60 * 60 * 1000, // 1 day
       path: "/",
     };
     return res
       .status(200)
-      .cookie("token",token, options)
-      .json({ message: "Login successful."})
+      .cookie("token", token, options)
+      .json({ message: "Login successful." });
   } catch (error) {
     console.log(error);
     return res.status(400).json({ message: "Error while logging in." });
@@ -51,13 +53,25 @@ const vote = async (req, res) => {
   }
 };
 
-
 const logout = async (req, res) => {
   try {
-    const user = await Voter.findOneAndUpdate(req.user?._id, {
-      $set: { token: undefined },
-    });
-    return res.status(200).json({ message: "Loggout successfully." });
+    const user = await Voter.findOneAndUpdate(
+      { _id: req.user?._id },
+      {
+        $unset: { token: 1 },
+      },
+      { new: true }
+    );
+    const options = {
+      httpOnly: true,
+      secure: true,
+      sameSite: "None",
+      path: "/",
+    }
+    return res
+      .status(200)
+      .clearCookie("token",options)
+      .json({ message: "Loggout successfully." });
   } catch (error) {
     return res.status(400).json({ message: "Error: " + error.message });
   }

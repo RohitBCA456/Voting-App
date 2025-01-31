@@ -5,7 +5,7 @@ const auth = async (req, res, next) => {
     // Try fetching token from cookies or Authorization header
     const token =
       req.cookies?.token || req.header("Authorization")?.replace("Bearer ", "");
-
+      console.log(`token recieved: ${token}`);
     if (!token) {
       return res.status(404).json({ message: "Invalid Token." });
     }

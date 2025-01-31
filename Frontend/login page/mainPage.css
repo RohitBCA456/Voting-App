@@ -292,4 +292,28 @@
           margin-top: 20px;
           font-size: 14px;
       }
+      .profile-2 {
+        position: relative;
+        display: flex;
+        flex-direction:column;
+      }
+      
+      .dropdown-2 {
+        position: absolute;
+        font-weight: bold;
+        top: 20px;
+        left: 130px;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        min-width: 180px;
+      }
+      
+      .profile-2:hover .dropdown-2,
+      #user-profile:hover + .dropdown-2 {
+        display: block;
+      }
+      
       
