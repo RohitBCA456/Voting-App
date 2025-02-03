@@ -1,4 +1,4 @@
-﻿# Voting-App
+# Voting-App
 
 A robust and secure voting application designed to facilitate democratic processes in various contexts.
 
@@ -21,9 +21,9 @@ This Voting-App is being developed to provide a reliable and user-friendly platf
 
 ## Technologies
 
-- Backend: [To be decided]
-- Frontend: [To be decided]
-- Database: [To be decided]
+- Backend: Node js with express framework.
+- Frontend: html, css and javascript.
+- Database: Mongodb.
 
 ## Installation
 
