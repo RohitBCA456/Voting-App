@@ -5,6 +5,8 @@ const log_out = document.getElementById("log-out");
 
 document.getElementById("Aadhaar").innerText = localStorage.getItem("adhaarCard");
 document.getElementById("Phone").innerText = localStorage.getItem("phNumber");
+document.querySelector(".profile-pic").src = localStorage.getItem("avatar");
+document.querySelector("#dropdown-profile").src = localStorage.getItem("avatar");
 async function onVoteModi() {
   try {
     const response = await fetch("http://localhost:3000/api/v3/voting/vote", {

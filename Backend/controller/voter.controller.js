@@ -22,7 +22,7 @@ const login = async (req, res) => {
     return res
       .status(200)
       .cookie("token", token, options)
-      .json({ message: "Login successful." });
+      .json({ avatar: voter.avatar, message: "Login successful." });
   } catch (error) {
     console.log(error);
     return res.status(400).json({ message: "Error while logging in." });

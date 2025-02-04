@@ -5,17 +5,23 @@ form.addEventListener("submit", async (event, req, res) => {
     const response = await fetch(`http://localhost:3000/api/v3/voting/login`, {
       method: "POST",
       headers: {
-          "Content-Type": "application/json",
-        },
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         adhaarCard: document.getElementById("adhaarCard").value,
         phNumber: document.getElementById("phNumber").value,
       }),
       credentials: "include",
     });
-    localStorage.setItem("adhaarCard",document.getElementById("adhaarCard").value)
-    localStorage.setItem("phNumber",document.getElementById("phNumber").value)
-    console.log(response);
+    localStorage.setItem(
+      "adhaarCard",
+      document.getElementById("adhaarCard").value
+    );
+    localStorage.setItem("phNumber", document.getElementById("phNumber").value);
+    let data = await response.json();
+    console.log(data.avatar);
+    console.log(data.message);
+    localStorage.setItem("avatar", data.avatar);
     if (response.ok) {
       alert("click here to proceed.");
       console.log("User exists in the database.");

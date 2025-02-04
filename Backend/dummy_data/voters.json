@@ -3,120 +3,140 @@
     "name": "Amit Kumar",
     "AdhaarNumber": "123456789012",
     "phoneNumber": "9876543210",
+    "avatar" : "https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129416.jpg",
     "isVoted": false
   },
   {
     "name": "Priya Sharma",
     "AdhaarNumber": "234567890123",
     "phoneNumber": "8765432109",
+    "avatar" : "https://media.istockphoto.com/id/1320811419/photo/head-shot-portrait-of-confident-successful-smiling-indian-businesswoman.jpg?s=612x612&w=0&k=20&c=bCUTB8vd8MnzZFIq-x645-SmLNk2sQzOvOvWCPGDfZ4=",
     "isVoted": false
   },
   {
     "name": "Rahul Verma",
     "AdhaarNumber": "345678901234",
     "phoneNumber": "7654321098",
+    "avatar" : "https://media.istockphoto.com/id/1406197730/photo/portrait-of-a-young-handsome-indian-man.jpg?s=612x612&w=0&k=20&c=CncNUTbw6mzGsbojks2Vt0kV85N_pQaI3zaSkBQJFTc=",
     "isVoted": false
   },
   {
     "name": "Neha Gupta",
     "AdhaarNumber": "456789012345",
     "phoneNumber": "6543210987",
+    "avatar" : "https://plus.unsplash.com/premium_photo-1682092039530-584ae1d9da7f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwcGVvcGxlfGVufDB8fDB8fHww",
     "isVoted": false
   },
   {
     "name": "Suresh Yadav",
     "AdhaarNumber": "567890123456",
     "phoneNumber": "5432109876",
+    "avatar" : "https://t3.ftcdn.net/jpg/03/67/70/92/360_F_367709239_wWNdUSrtEvG6psATqu1sO9AkKUXALpR8.jpg",
     "isVoted": false
   },
   {
     "name": "Anjali Singh",
     "AdhaarNumber": "678901234567",
     "phoneNumber": "4321098765",
+    "avatar" : "https://thumbs.dreamstime.com/b/vertical-portrait-happy-young-business-lady-indian-ethnicity-standing-confident-pose-looking-camera-profile-picture-339154738.jpg",
     "isVoted": false
   },
   {
     "name": "Vikram Chauhan",
     "AdhaarNumber": "789012345678",
     "phoneNumber": "3210987654",
+    "avatar" : "https://img.freepik.com/free-photo/indian-man-city-male-traditional-turban-hinduist-summer-city_1157-41026.jpg",
     "isVoted": false
   },
   {
     "name": "Pooja Reddy",
     "AdhaarNumber": "890123456789",
     "phoneNumber": "2109876543",
+    "avatar" : "https://plus.unsplash.com/premium_photo-1723568666044-1b066e26b1fb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWFuJTIwcGVyc29ufGVufDB8fDB8fHww",
     "isVoted": false
   },
   {
     "name": "Ravi Patil",
     "AdhaarNumber": "901234567890",
     "phoneNumber": "1098765432",
+    "avatar" : "https://lh3.googleusercontent.com/proxy/_e-yomvNCycA6Z1s-YfGRnAsmonq8xtkuGhzpxNZWG5BXQsPnYp_XISO0zCAhUo_oU41rSBLA6c7yf98nehGMSSGfoKF",
     "isVoted": false
   },
   {
     "name": "Manisha Iyer",
     "AdhaarNumber": "012345678901",
     "phoneNumber": "1987654321",
+    "avatar" : "https://media.istockphoto.com/id/1387060932/photo/portrait-of-woman-on-white-background-stock-photo.jpg?s=612x612&w=0&k=20&c=jR3ZZt4I9GAHxebkg9zZCsJ6B-VHfKlCd3i7kAHnEHk=",
     "isVoted": false
   },
   {
     "name": "Arjun Nair",
     "AdhaarNumber": "112233445566",
     "phoneNumber": "9876123456",
+    "avatar" : "https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
     "isVoted": false
   },
   {
     "name": "Deepak Mehta",
     "AdhaarNumber": "223344556677",
     "phoneNumber": "8765123456",
+    "avatar" : "https://t3.ftcdn.net/jpg/05/31/32/36/360_F_531323691_ai5HJlsq7BC7wChtR21DDmhunXC35YG6.jpg",
     "isVoted": false
   },
   {
     "name": "Kavita Desai",
     "AdhaarNumber": "334455667788",
     "phoneNumber": "7654123456",
+    "avatar" : "https://img.freepik.com/free-photo/woman-doing-close-up-photoshoot-studio_53876-14476.jpg?semt=ais_hybrid",
     "isVoted": false
   },
   {
     "name": "Harish Malhotra",
     "AdhaarNumber": "445566778899",
     "phoneNumber": "7654123256",
+    "avatar" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztrdvy2o6K3ngr77e-6Y-v2gl0sWRyigjsw&s",
     "isVoted": false
   },
   {
     "name": "Sunita Bansal",
     "AdhaarNumber": "556677889900",
     "phoneNumber": "5432123456",
+    "avatar" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVep5G-PgHUDiPqHBKlCSRB3_QdIye7PVmDA&s",
     "isVoted": false
   },
   {
     "name": "Rajeev Choudhary",
     "AdhaarNumber": "667788990011",
     "phoneNumber": "4321123456",
+    "avatar" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkSd6O_aMnppKY5jcB6uO_G5VVDIT_PKaCw&s",
     "isVoted": false
   },
   {
     "name": "Meena Pillai",
     "AdhaarNumber": "778899001122",
     "phoneNumber": "3211123456",
+    "avatar" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsDs8IIVdbCMcigEfIGdGPzX-jlunHNMqkGA&s",
     "isVoted": false
   },
   {
     "name": "Sanjay Bhattacharya",
     "AdhaarNumber": "889900112233",
     "phoneNumber": "2101123456",
+    "avatar" : "https://img.freepik.com/premium-photo/young-handsome-indian-businessman-against-gray-space_251136-66150.jpg?semt=ais_hybrid",
     "isVoted": false
   },
   {
     "name": "Lakshmi Subramanian",
     "AdhaarNumber": "990011223344",
     "phoneNumber": "1091123456",
+    "avatar" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvoXx8ZzyPm7xFbrGPA_GccWcgZuzJnp5AYQ&s",
     "isVoted": false
   },
   {
     "name": "Ajay Thakur",
     "AdhaarNumber": "101122334455",
     "phoneNumber": "1981123456",
+    "avatar" : "https://p1.pxfuel.com/preview/571/691/611/profile-picture-image-suit.jpg",
     "isVoted": false
   }
 ]

@@ -16,6 +16,10 @@ const voterSchema = new Schema(
       required: true,
       unique: true,
     },
+    avatar: {
+      type: String,
+      required: true,
+    },
     token: {
       type: String,
       unique: true,
