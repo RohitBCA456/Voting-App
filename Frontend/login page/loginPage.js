@@ -26,7 +26,7 @@ form.addEventListener("submit", async (event, req, res) => {
       alert("click here to proceed.");
       console.log("User exists in the database.");
       window.location.href =
-        "http://127.0.0.1:5500/Frontend/login%20page/mainPage.html";
+        "http://127.0.0.1:5501/Frontend/login%20page/mainPage.html";
     } else {
       alert("You're not registered by the Government of India.");
     }

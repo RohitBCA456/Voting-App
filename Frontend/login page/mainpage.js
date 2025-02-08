@@ -107,7 +107,7 @@ async function logout(){
     )
     if(response.ok){
       alert('You have been logged out successfully.');
-      window.location.href = "http://127.0.0.1:5500/Frontend/login%20page/loginPage.html";
+      window.location.href = "http://127.0.0.1:5501/Frontend/login%20page/loginPage.html";
     }
   })
 }
