@@ -2,7 +2,6 @@ import JWT from "jsonwebtoken";
 import { Voter } from "../model/voters.model.js";
 const auth = async (req, res, next) => {
   try {
-    // Try fetching token from cookies or Authorization header
     const token =
       req.cookies?.token || req.header("Authorization")?.replace("Bearer ", "");
       console.log(`token recieved: ${token}`);
